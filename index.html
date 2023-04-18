@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>
+            My first website.
+            </title>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+            
+            <style>
+                .row{
+                    width:720px;
+                    margin: 10px auto 10px auto ;
+                }
+                .image-container {
+                    display: table-cell;
+                    vertical-align: middle;
+                    padding:20px;
+                }
+            </style>
+    </head>
+
+    <body style="background-color:rgb(141, 238, 255);">
+    
+        <h1>
+            This is the main heading!
+        </h1>
+        <h2>
+            This is a subheading!
+        </h2>
+        <p>
+            Here's a sentence!
+        </p>
+
+        <img id="img1" src="img/meditation-01.png" width="200" height="200"/>
+        <img id="img2" src="img/music-02.png" width="200" height="200"/>
+        <img id="img3" src="img/spa-03.png" width="200" height="200"/>
+        <img id="img4" src="img/dog-04.png" width="200" height="200"/>
+        <img id="img5" src="img/recharge-05.png" width="200" height="200"/>
+        <img id="img6" src="img/tea-06.png" width="200" height="200"/>
+        <img id="img7" src="img/sleep-07.png" width="200" height="200"/>
+        <img id="img8" src="img/food-08.png" width="200" height="200"/>
+        <img id="img9" src="img/love-09.png" width="200" height="200"/>
+
+        <script>
+            var sound1 = new buzz.sound("sound/music1.mp3");
+            var sound2 = new buzz.sound("sound/music.mp3");
+            var sound3 = new buzz.sound("sound/spa.mp3");
+            var sound4 = new buzz.sound("sound/dog.mp3");
+            var sound5 = new buzz.sound("sound/recharge.mp3");
+            var sound6 = new buzz.sound("sound/tea.mp3");
+            var sound7 = new buzz.sound("sound/sleep.mp3");
+            var sound8 = new buzz.sound("sound/beach.mp3");
+            var sound9 = new buzz.sound("sound/love.mp3");
+     
+            window.onload = function() {
+                document.getElementById('img1').addEventListener('click', function () {sound1.play(); });  
+                document.getElementById('img2').addEventListener('click', function () {sound2.play(); });
+                document.getElementById('img3').addEventListener('click', function () {sound3.play(); });
+                document.getElementById('img4').addEventListener('click', function () {sound4.play(); });
+                document.getElementById('img5').addEventListener('click', function () {sound5.play(); }); 
+                document.getElementById('img6').addEventListener('click', function () {sound6.play(); }); 
+                document.getElementById('img7').addEventListener('click', function () {sound7.play(); }); 
+                document.getElementById('img8').addEventListener('click', function () {sound8.play(); }); 
+                document.getElementById('img9').addEventListener('click', function () {sound9.play(); });
+            }  
+        </script>   
+
+    </body>
+</html>
